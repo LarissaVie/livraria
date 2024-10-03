@@ -1,0 +1,67 @@
+/* janela principal */
+window {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+/* entradas de texto */
+entry {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* labels */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* combo box */
+combobox {
+    font-size: 14px;
+}
+
+/* FlowBox */
+flowbox child {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+}
+
+flowbox child:hover {
+    background-color: #d3d3d3;
+}
+
+/* "cards" */
+frame {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* título da aplicação */
+headerbar {
+    background-color: #4CAF50;
+    color: white;
+}
