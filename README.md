@@ -15,4 +15,39 @@ A aplicação utiliza uma lista encadeada dupla para armazenar os livros, garant
 
 ## 🖥️ Video no youtube explicando informações: https://www.youtube.com/watch?v=ltJZ5JVjo0k
 
+## Pré-requisitos
+
+Antes de começar, você precisará das seguintes ferramentas:
+
+- **MSYS2**: Ambiente Unix-like para Windows.
+- **GTK**: Biblioteca para criação de interfaces gráficas.
+
+### 1. Instalar MSYS2
+
+Baixe e instale o [MSYS2](https://www.msys2.org/). Após a instalação, siga os passos abaixo:
+
+1. Abra o terminal MSYS2 e atualize os pacotes:
+
+   ```bash
+   pacman -Syu
+
+ - Reinicie o terminal e continue a atualização:
+   
+   ```bashh
+   pacman -Su
+
+2. Instalar GTK e Ferramentas de Desenvolvimento
+No terminal MSYS2, instale o GTK3 e o conjunto de ferramentas de desenvolvimento:
+   ```bash
+   pacman -S mingw-w64-x86_64-gtk3 mingw-w64-x86_64-toolchain
+
+3. Compilação e Execução
+   1. Compile o código usando o GCC no terminal MSYS2:
+    ```bash
+    gcc -o livraria livraria.c `pkg-config --cflags --libs gtk+-3.0`
+
+2. Execute o programa:
+    ```bash
+    ./livraria.exe
+
 ## 👩‍💻 Desenvolvedores [José Jhonata Vieira de Oliveira] [Larissa Vieira de Oliveira]
