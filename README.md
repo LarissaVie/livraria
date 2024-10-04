@@ -40,8 +40,14 @@ Baixe e instale o [MSYS2](https://www.msys2.org/). Após a instalação, siga os
 No terminal MSYS2, instale o GTK3 e o conjunto de ferramentas de desenvolvimento:
    ```bash
    pacman -S mingw-w64-x86_64-gtk3 mingw-w64-x86_64-toolchain
+   
+   pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-pkg-config
+
 
 3. Compilação e Execução
+
+   Navegue até o seu diretorio ex:cd /c/Users/Aluno/Desktop/atividade
+
    1. Compile o código usando o GCC no terminal MSYS2:
     ```bash
     gcc -o livraria livraria.c `pkg-config --cflags --libs gtk+-3.0`
@@ -50,4 +56,14 @@ No terminal MSYS2, instale o GTK3 e o conjunto de ferramentas de desenvolvimento
     ```bash
     ./livraria.exe
 
+### Verificar o PATH
+
+Se após a instalação houver problemas com os comandos `gcc` ou `pkg-config`, você pode verificar se o caminho `/mingw64/bin` foi adicionado ao `PATH` do MSYS2. Isso garante que os comandos sejam encontrados corretamente.
+
+Você pode adicionar o caminho manualmente executando o seguinte comando no terminal do MSYS2:
+
+    ```bash
+    export PATH=/mingw64/bin:$PATH
+
+    
 ## 👩‍💻 Desenvolvedores [José Jhonata Vieira de Oliveira] [Larissa Vieira de Oliveira]
